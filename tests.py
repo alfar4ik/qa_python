@@ -25,7 +25,7 @@ class TestBooksCollector:
         collector.add_new_book('Genre Book')
         collector.set_book_genre('Genre Book', 'Фантастика')
         assert collector.get_book_genre('Genre Book') == 'Фантастика'
-        collector.set_book_genre('Genre Book', 'N/A Genre')
+        collector.set_book_genre('Genre Book', 'NA Genre')
         assert collector.get_book_genre('Genre Book') == 'Фантастика'
 
     @pytest.mark.parametrize("book_name, genre", [

@@ -20,7 +20,7 @@ class BooksCollector:
     def get_book_genre(self, name):
         return self.books_genre.get(name)
 
-    # выводим список книг с определённым жанром
+    # выводим список книг с определённым жанромм
     def get_books_with_specific_genre(self, genre):
         books_with_specific_genre = []
         if self.books_genre and genre in self.genre:
